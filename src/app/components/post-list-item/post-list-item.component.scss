@@ -1,7 +1,17 @@
 .datefloat {
-    position:absolute;
-    top:0;
-    right:0;
-    margin: 0.75rem 1.25rem;
     color: grey;
 }
+
+@media only screen and (min-width: 600px) {
+    .deletebutton {
+        right: 1.25rem;
+        position: absolute;
+    }
+    .datefloat {
+        position:absolute;
+        top:0;
+        right:0;
+        margin: 0.75rem 1.25rem;
+    }
+} 
+

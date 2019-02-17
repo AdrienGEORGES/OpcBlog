@@ -2,8 +2,11 @@
   <h2>{{post?.title}}</h2>
   <span class="datefloat">{{post.created_at | date:'short' }}</span>
   <p>{{post?.content}}</p>
-  <div class="btn-group"> 
-    <button type="button" class="btn btn-success " (click)="add()">Love It!</button>
-    <button type="button" class="btn btn-danger" (click)="dec()">Don't Love IT</button>
+  <div> 
+    <div class="btn-group"> 
+      <button type="button" class="btn btn-success " (click)="add()">Love It!</button>
+      <button type="button" class="btn btn-danger" (click)="dec()">Don't Love IT</button>
+    </div>
+    <button type="button" class="btn btn-danger deletebutton" (click)="delete()">Supprimer</button>
   </div>
 </li>
